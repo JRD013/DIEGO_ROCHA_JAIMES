@@ -5,24 +5,7 @@ import { Comp2Component } from './comp2/comp2.component';
 import { Comp3Component } from './comp3/comp3.component';
 import { Comp4Component } from './comp4/comp4.component';
 
-const routes: Routes = [
-  {
-    path:'CIPEC',
-    component: Comp1Component
-  },
-  {
-    path: 'INICIO',
-    component: Comp2Component
-  },
-  {
-    path: 'QUIENES SOMOS',
-    component: Comp3Component
-  },
-  {
-    path: 'DIRECCION',
-    component: Comp4Component
-  }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
