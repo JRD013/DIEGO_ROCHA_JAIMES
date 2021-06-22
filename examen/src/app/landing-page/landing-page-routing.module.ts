@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LandingPageComponent } from './landing-page.component';
 import { LandingPageModule } from './landing-page.module';
 import { LoginComponent } from './login/login.component';
+
 import { RegisterComponent } from './register/register.component';
 import { ServicesComponent } from './services/services.component';
 
@@ -36,13 +37,18 @@ const routes: Routes = [
         component: RegisterComponent
       },
       {
-        path: '**',
-        redirectTo: 'error'
-      },
-      {
-        path: 'error',
-        component: ErrorComponent
-      } 
+        path: 'login',
+        component: LoginComponent
+      }
+      // {
+      // path: '**',
+      //   redirectTo: 'error'
+      // },
+      // {
+      //   path: 'error',
+      //   component: ErrorComponent
+      // } 
+    
     ]
       
     }  
