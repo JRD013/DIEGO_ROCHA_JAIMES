@@ -1,17 +1,16 @@
-<h1>Tabla de Usuarios</h1>
+<h1 >Tabla de Usuarios</h1>
 
 <div class="container">
-  <div class="row">
-    <div class="col-ms-6" >
-      <div class="card mb-10 margen" style="max-width: 500px;" *ngFor="let row of rows">
-        <h5 class="card-header " style="text-align: center;"> <strong> End Points User</strong></h5>
+  <div class="row d-flex auto">
+    <div class="card border-success col-2" *ngFor="let row of rows">
+            <img [src]="row.avatar_url" alt="">
         <div class="card-header bg-dark text-white">{{row.id}}</div>
         <div class="card-body">
-          <h5 class="card-title">{{row.login}}</h5>
-          <p class="card-text">{{row.url}}</p>
-          <a href="https://api.github.com/users" style="text-align: center;" class="btn btn-primary ">Solicitar Datos</a>
+            <h5 class="card-title">{{row.login}}</h5>
+            <h6 class="card-text" style="text-align: center;">{{row.url}}</h6> 
+            <p class="card-text" style="text-align: center;">{{row.type}}</p> 
+            <a href="https://api.github.com/users" style="text-align: center;" class="btn btn-dark ">Solicitar Datos</a>  
         </div>
-      </div>
+    </div>
   </div>
-  </div>
-</div> <!-- fin container -->
+</div>
